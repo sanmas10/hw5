@@ -1,0 +1,16 @@
+# dune test
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/sanketmaskey/.cache/dune/db
+# Workspace root: "/Users/sanketmaskey/Desktop/CSE 341/hw5"
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/sanketmaskey/.opam/default/bin/ocamlc.opt -config > /var/folders/wv/yjmmnbzd6gsfdyw3_5wdlqbr0000gn/T/dune_1866db_output

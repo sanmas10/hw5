@@ -1,0 +1,18 @@
+(executable
+ (name trefoil)
+ (libraries trefoil3lib)
+ (modules trefoil))
+
+(library
+ (name trefoil3lib)
+ (modules env errors lex parse semantics stream syntax run)
+ (preprocess
+  (pps ppx_deriving.show)))
+
+(library
+ (name trefoiltest)
+ (modules parse_test semantics_test newtests)
+ (libraries trefoil3lib)
+ (inline_tests)
+ (preprocess
+  (pps ppx_inline_test)))

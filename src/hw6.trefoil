@@ -1,0 +1,20 @@
+; hw6.trefoil
+; shows: multi-variable let, print, symbols, functions
+
+; Define a function that greets a person with a tag symbol
+(define (greet name)
+  (let ((tag 'greeting) (message (cons "Hello," name)))
+    (print tag)
+    (print message)
+    message))
+
+; Define a function to check if a number is even
+(define (is-even n)
+  (cond
+    ((= (mod n 2) 0) true)
+    (true false)))
+
+; Main program
+(print (greet "Sanket"))
+(print (is-even 10))
+(print (is-even 7))
