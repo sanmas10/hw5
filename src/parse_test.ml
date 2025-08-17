@@ -21,7 +21,7 @@ let%test "test_add_abstract_syntax_error" =
 
 
 (* Here is a template for a psrsing test for let expressions *)
-(* Parsing test for v3 let: (let ((x 3)) (+ x 1)) *)
+(* Parsing test for v3 let: (let ((x 3)) (+ x 1)) **)
 let%test _ =
   let parsed_let = Run.expr_of_string "(let ((x 3)) (+ x 1))" in
   let manually_constructed_let =
